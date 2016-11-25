@@ -6,8 +6,8 @@
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
-    <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/print.css" rel="stylesheet"> -->
+    <link href="css/print.css" rel="stylesheet" media="print">
+    <link href="css/mobile.css" rel="stylesheet" media="orientation:portrait">
     <style type="text/css">
       html {
   font-size: 100%;
@@ -53,12 +53,6 @@ footer {
 }
 footer span { float: right; font-style: italic; }
 
-/* Smartphones (portrait) */
-@media only screen and (max-width: 480px) {
-  body { font-size: 12px;}
-  header p { padding-left: 4.5em;}
-}
-
 
     </style>
   </head>
@@ -101,20 +95,7 @@ footer span { float: right; font-style: italic; }
     <footer>
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
-    <script async>
-         (function(w,g){w['GoogleAnalyticsObject']=g;
-         w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();
-         });
-         (window,'ga');
-      </script>
-      <script async src="js/perfmatters.js" ></script>
-      <script async>
-      WebFontConfig = {google: {families: ['Open Sans:400,700']}};
-      (function(doc) {
-         var webfonts = doc.createElement('script'), scriptFont = doc.scripts[0];
-         webfonts.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
-         scriptFont.parentNode.insertBefore(webfonts, scriptFont);  })(document);
-      </script>
-      <script async src="http://www.google-analytics.com/analytics.js"></script>
+      <script async defer src="js/perfmatters.js" ></script>
+    
   </body>
 </html>
